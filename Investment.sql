@@ -9,7 +9,6 @@ CREATE TABLE Investment (
     recurring boolean,
     associated_account varchar(50) NOT NULL,
     vendor varchar(50) NOT NULL,
-    PRIMARY KEY investment_ID,
+    PRIMARY KEY (investment_ID),
     FOREIGN KEY (user_id) REFERENCES User_Details(user_id)
-    );
-    
+);
